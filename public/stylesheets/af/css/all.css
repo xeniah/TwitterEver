@@ -1,0 +1,668 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	margin:0; padding:0;
+	color:#515c62;
+	font:14px Georgia, "Times New Roman", Times, serif;
+	background:#fff;
+	min-width:999px;
+}
+img{border-style:none;}
+a{
+	text-decoration:none;
+	color:#888;
+}
+a:hover{text-decoration:underline;}
+input, textarea, select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+.w1,
+.w2{
+	background:#ccc url(/images/bg-w1.png) repeat-x;
+}
+.w2{
+/* 	background:#0f657d url(/images/bg-w4.png) repeat-x;*/
+	background:#6BB130 url(/images/bg-w4.png) repeat-x;
+}
+#header{
+	padding:38px 0 30px;
+	font:bold 14px Helvetica, Arial, sans-serif;
+}
+#header .side{
+	float:right;
+}
+#header .logo{
+	font-size:44px;
+	letter-spacing:-3px;
+	margin:0 0 0 -1px;
+	float:left;
+}
+.logo strong{
+	float:left;
+}
+.logo span{
+	font-size:30px;
+	float:left;
+	padding:1px 8px 0 18px;
+	letter-spacing:1px;
+}
+.logo cufon{
+	float:left;
+}
+.logo a{
+	color:#20252d;
+}
+#header .phone{
+	font-size:26px;
+	color:#20252d;
+	float:left;
+	margin:5px -3px 0 21px;
+}
+#header .phone cufon{
+	float:left;
+}
+#header .call{
+	font-size:30px;
+	color:#a6b4bf;
+	float:left;
+}
+#header .call cufon{
+	float:left;
+}
+#main{
+	background:url(/images/bg-main-tp.png) no-repeat center top; padding-top:8px;
+	width:944px;
+}
+#main .main-holder{
+	overflow:hidden;
+	width:880px;
+	height: 280px;
+	padding:22px 32px 40px;
+	background:url(/images/bg-main.png) repeat-y center top;
+}
+.placeholder{
+	background:url(/images/bg-video-holder.png) no-repeat;
+	padding:11px 12px;
+	float:left;
+	margin:-10px 38px 0 -10px;
+}
+.placeholder img{
+	vertical-align:top;
+}
+#main .text-holder{
+	overflow:hidden;
+	padding:15px 0 0;
+}
+#main h2{
+	font:bold 24px Helvetica, Arial, sans-serif;;
+	color:#515c62;
+	text-transform:uppercase;
+	margin:0 0 25px;
+	overflow:hidden;
+	height:1%;
+}
+#main h2 cufon{
+	float:left;
+}
+.tags h3{
+	margin:0 0 7px;
+	font:bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tags h3 a{
+	color:#1a293a;
+}
+.tags li{
+	padding:4px 0 24px 37px;
+	height:1%;
+}
+.tags .video{
+	background:url(/images/video_24.png) no-repeat;
+}
+.tags .case{
+	background:url(/images/case_24.png) no-repeat;
+}
+.tags .calendar{
+	background:url(/images/calendar_24.png) no-repeat;
+}
+.nav-holder{
+	position:relative;
+	height:1%;
+	margin:0 -8px 38px -8px;
+}
+#nav{
+	overflow:hidden;
+	height:1%;
+	padding:20px 0 40px;
+	font:bold 16px "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	background:url(/images/bg-nav.png) no-repeat;
+}
+.nav-w1{
+	width:981px;
+	position:relative;
+	overflow:hidden;
+}
+.nav-w2{
+	position:relative;
+	float:left;
+	left:50%;
+}
+#nav ul{
+	position:relative;
+	float:left;
+	left:-50%;
+}
+#nav li{
+	float:left;
+	padding:0 3px;
+}
+#nav a{
+	color:#243a49;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+#nav span{
+	float:left;
+	height:37px;
+}
+#nav .lt{
+	padding: 8px 13px 1px 39px;
+	height:28px;
+}
+#nav .rt{
+	width:25px;
+}
+#nav a:hover{
+	text-decoration:none;
+}
+#nav a:hover .lt{
+	background:url(/images/bg-nav-lt-hover.png) no-repeat;
+}
+#nav a:hover .rt{
+	background:url(/images/bg-nav-rt-hover.png) no-repeat;
+}
+
+#nav .active .lt,
+#nav .active a:hover .lt{
+	background:url(/images/bg-nav-lt.png) no-repeat;
+}
+#nav .active .rt,
+#nav .active a:hover .rt{
+	background:url(/images/bg-nav-rt.png) no-repeat;
+}
+.block{
+	text-align:center;
+	color:#1a293a;
+	padding:0 0 50px;
+	font:16px Helvetica, Arial, sans-serif;
+}
+.block h3{
+	font-size:60px;
+	color:#000;
+	overflow:hidden;
+	width:693px;
+	margin:0 auto;
+	letter-spacing:-3px;
+}
+.block h3 strong,
+.block h3 span{
+	float:left;
+}
+.block h3 span{
+	font-size:52px;
+	padding:0 17px 0 31px;
+	letter-spacing:-1px;
+}
+.block h3 cufon{
+	float:left;
+}
+.block .start{
+	font-size:18px;
+	font-weight: normal;
+	display:block;
+	margin:0 0 30px;
+}
+.block .start + .button span { font-size:32px;}
+.block .button{
+ margin-bottom:18px;
+}
+.block .btn:hover{
+	text-decoration:none;
+}
+.block span a {
+	color:#1a293a;
+	text-decoration:underline;
+}
+.block span a:hover{
+	text-decoration:none;
+}
+body {
+	background:#bebebe;
+}
+#footer{
+	font:13px Helvetica, Arial, sans-serif;
+	color:#888;
+	overflow:hidden;
+	border-top:1px solid rgba(255,255,255,0.2);
+}
+#footer .holder{
+	padding:17px 0 14px 2px;
+}
+#footer .copy{
+	float:right;
+}
+#footer ul{
+	overflow:hidden;
+	margin:0 auto;
+}
+#footer ul li{
+	float:left;
+	padding:0 10px 0 0;
+}
+#footer ul a{
+	text-decoration:underline;
+}
+#footer ul a:hover{
+	text-decoration:none;
+}
+#footer .social-networks li{
+	padding:0 5px 0 0;
+}
+#footer .social-networks{
+	float:left;
+	width:auto;
+	margin:0 201px 0 0;
+}
+.social-networks a {
+	width:24px;
+	height:24px;
+	text-indent:-9999px;
+	overflow:hidden;
+	display:block;
+	background:url(/images/bg-social-networks2.png) no-repeat left 1px;
+	opacity:0.8;
+	filter: alpha(opacity=40);
+}
+.social-networks a:hover {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+.social-networks .linkedin{
+	background-position:-24px 2px;
+}
+.social-networks .facebook{
+	background-position:-48px 2px;
+}
+.social-networks .twitter{
+	background-position:-70px 1px;
+}
+.social-networks .flickr{
+	background-position:-93px 2px;
+}
+/*features*/
+.column{
+	width:480px;
+	float:left;
+}
+.column2{
+	float:right;
+	width:350px;
+}
+.column table{
+	margin:2px 0 0;
+	border-collapse:collapse;
+	width:480px;
+	font:bold 14px Helvetica, Arial, sans-serif;
+}
+.column table img{
+	display:block;
+}
+.column table th{
+	padding:0 0 19px;
+	text-align:left;
+}
+.column table td{
+	padding:10px 0 17px;
+	border-top:1px solid #cdd8dd;
+}
+.column table .bullet{
+	margin: 5px 0 -5px 5px;
+}
+.column table .name{
+	width:215px;
+}
+.column table .col{
+	width:79px;
+}
+.tags .clock{
+	background:url(/images/ico-clock.png) no-repeat;
+}
+.tags .wifi{
+	background:url(/images/ico-wifi.png) no-repeat;
+}
+.tags .people{
+	background:url(/images/ico-people.png) no-repeat;
+}
+/*testimonials*/
+#main h2.aligncenter{
+	text-align:center;
+	height: 18px;
+	margin:0 0 30px;
+}
+* html #main h2.aligncenter{
+	margin:0 0 23px;
+}
+* +html #main h2.aligncenter{
+	margin:0 0 23px;
+}
+#main h2.aligncenter span{
+	display:inline-block;
+}
+.testimonials-holder{
+	width:100%;
+	overflow:hidden;
+}
+.testimonials{
+	overflow:hidden;
+	width:930px;
+}
+.testimonial{
+	width:440px;
+	float:left;
+	margin:0 19px 0 0;
+	display:inline;
+}
+.testimonial .img-holder{
+	float:left;
+	background:url(/images/bg-img-holder.png) no-repeat;
+	padding:11px 12px;
+	margin:0 18px 0 0;
+}
+.testimonial img{
+	vertical-align:top;
+}
+.testimonial blockquote{
+	margin:20px 0 0;
+	line-height:24px;
+	height:1%;
+}
+.testimonial cite{
+	display:block;
+	margin:0 0 6px;
+	font:bold 14px Helvetica, Arial, sans-serif;
+}
+.testimonial blockquote q{
+	quotes:none;
+	font-size:16px;
+}
+q:before{content:'"'; }
+q:after{content:'"';}
+/*screenshots*/
+.screenshots{
+	overflow:hidden;
+	width:920px;
+	margin-left: -12px;
+}
+.screenshots li{
+	float:left;
+	display:inline;
+	padding:11px 12px;
+	margin:0 16px 0 0;
+	background:url(/images/bg-img-holder2.png) no-repeat;
+}
+.screenshots img{
+	display:block;
+}
+/*buttons*/
+#buttons { padding: 20px 0 40px;}
+#buttons .button { margin: 10px 0 10px 10px;}
+#buttons .clear { height:20px;}
+.button, .button span { display: inline-block; font-weight: bold; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-shadow:0 -1px 0 rgba(0,0,0,0.2); color:#fff!important; background-repeat: no-repeat; white-space: nowrap; }
+.button > span {  background-position:left top;}
+.button > span > span { background-position:right top;}
+.button:hover {text-decoration: none; opacity: 0.85; filter: alpha(opacity=85);}
+
+.button.small span { background-image:url(/images/button40.png); line-height:40px;  font-size:18px; }
+.button.small > span { padding-left: 31px;}
+.button.small > span > span { padding: 2px 31px 4px 0; line-height:40px;}
+
+.button.small.winered > span { background-position: left top;}
+.button.small.winered > span > span { background-position: right top;}
+
+.button.small.red > span { background-position: left -46px;}
+.button.small.red > span > span { background-position: right -46px;}
+
+.button.small.orange > span { background-position: left -92px;}
+.button.small.orange > span > span { background-position: right -92px;}
+
+.button.small.lightred > span { background-position: left -138px;}
+.button.small.lightred > span > span { background-position: right -138px;}
+
+.button.small.pinkred > span { background-position: left -184px;}
+.button.small.pinkred > span > span { background-position: right -184px;}
+
+.button.small.lightgreen > span { background-position: left -230px;}
+.button.small.lightgreen > span > span { background-position: right -230px;}
+
+.button.small.green > span { background-position: left -276px;}
+.button.small.green > span > span { background-position: right -276px;}
+
+.button.small.darkblue > span { background-position: left -322px;}
+.button.small.darkblue > span > span { background-position: right -322px;}
+
+.button.small.blue > span { background-position: left -368px;}
+.button.small.blue > span > span { background-position: right -368px;}
+
+.button.small.lightblue > span { background-position: left -414px;}
+.button.small.lightblue > span > span { background-position: right -414px;}
+
+.button.small.cyan > span { background-position: left -460px;}
+.button.small.cyan > span > span { background-position: right -460px;}
+
+.button.small.purple > span { background-position: left -506px;}
+.button.small.purple > span > span { background-position: right -506px;}
+
+.button.small.lightpurple > span { background-position: left -552px;}
+.button.small.lightpurple > span > span { background-position: right -552px;}
+
+.button.small.greymetal > span { background-position: left -598px;}
+.button.small.greymetal > span > span { background-position: right -598px;}
+
+.button.small.grey > span { background-position: left -644px;}
+.button.small.grey > span > span { background-position: right -644px;}
+
+.button.small.darkyellow > span { background-position: left -690px;}
+.button.small.darkyellow > span > span { background-position: right -690px;}
+
+.button.small.yellow > span { background-position: left -736px;}
+.button.small.yellow > span > span { background-position: right -736px;}
+
+.button.small.darkred > span { background-position: left -782px;}
+.button.small.darkred > span > span { background-position: right -782px;}
+
+.button.medium span { background-image:url(/images/button55.png); line-height:54px;  font-size:20px; }
+.button.medium > span { padding-left: 40px;}
+.button.medium > span > span { padding: 2px 40px 4px 0;}
+
+.button.medium.yellow > span { background-position: left top;}
+.button.medium.yellow > span > span { background-position: right top;}
+
+.button.medium.pinkred > span { background-position: left -60px;}
+.button.medium.pinkred > span > span { background-position: right -60px;}
+
+.button.medium.cyan > span { background-position: left -120px;}
+.button.medium.cyan > span > span { background-position: right -120px;}
+
+.button.medium.lightred > span { background-position: left -180px;}
+.button.medium.lightred > span > span { background-position: right -180px;}
+
+.button.medium.lightblue > span { background-position: left -240px;}
+.button.medium.lightblue > span > span { background-position: right -240px;}
+
+.button.medium.darkyellow > span { background-position: left -300px;}
+.button.medium.darkyellow > span > span { background-position: right -300px;}
+
+.button.medium.orange > span { background-position: left -360px;}
+.button.medium.orange > span > span { background-position: right -360px;}
+
+.button.medium.blue > span { background-position: left -420px;}
+.button.medium.blue > span > span { background-position: right -420px;}
+
+.button.medium.grey > span { background-position: left -480px;}
+.button.medium.grey > span > span { background-position: right -480px;}
+
+.button.medium.red > span { background-position: left -540px;}
+.button.medium.red > span > span { background-position: right -540px;}
+
+.button.medium.darkblue > span { background-position: left -600px;}
+.button.medium.darkblue > span > span { background-position: right -600px;}
+
+.button.medium.greymetal > span { background-position: left -660px;}
+.button.medium.greymetal > span > span { background-position: right -660px;}
+
+.button.medium.winered > span { background-position: left -720px;}
+.button.medium.winered > span > span { background-position: right -720px;}
+
+.button.medium.green > span { background-position: left -780px;}
+.button.medium.green > span > span { background-position: right -780px;}
+
+.button.medium.purple > span { background-position: left -840px;}
+.button.medium.purple > span > span { background-position: right -840px;}
+
+.button.medium.lightgreen > span { background-position: left -900px;}
+.button.medium.lightgreen > span > span { background-position: right -900px;}
+
+.button.medium.darkpurple > span { background-position: left -960px;}
+.button.medium.darkpurple > span > span { background-position: right -960px;}
+
+.button.medium.darkred > span { background-position: left -1020px;}
+.button.medium.darkred > span > span { background-position: right -1020px;}
+
+
+
+.button.large span { background-image:url(/images/button70.png); line-height:70px;  font-size:24px; }
+.button.large > span { padding-left: 50px;}
+.button.large > span > span { padding: 2px 50px 4px 0;}
+
+.button.large.yellow > span { background-position: left top;}
+.button.large.yellow > span > span { background-position: right top;}
+
+.button.large.pinkred > span { background-position: left -76px;}
+.button.large.pinkred > span > span { background-position: right -76px;}
+
+.button.large.cyan > span { background-position: left -152px;}
+.button.large.cyan > span > span { background-position: right -152px;}
+
+.button.large.lightred > span { background-position: left -228px;}
+.button.large.lightred > span > span { background-position: right -228px;}
+
+.button.large.lightblue > span { background-position: left -304px;}
+.button.large.lightblue > span > span { background-position: right -304px;}
+
+.button.large.darkyellow > span { background-position: left -380px;}
+.button.large.darkyellow > span > span { background-position: right -380px;}
+
+.button.large.orange > span { background-position: left -456px;}
+.button.large.orange > span > span { background-position: right -456px;}
+
+.button.large.blue > span { background-position: left -532px;}
+.button.large.blue > span > span { background-position: right -532px;}
+
+.button.large.grey > span { background-position: left -608px;}
+.button.large.grey > span > span { background-position: right -608px;}
+
+.button.large.red > span { background-position: left -684px;}
+.button.large.red > span > span { background-position: right -684px;}
+
+.button.large.darkblue > span { background-position: left -760px;}
+.button.large.darkblue > span > span { background-position: right -760px;}
+
+.button.large.greymetal > span { background-position: left -836px;}
+.button.large.greymetal > span > span { background-position: right -836px;}
+
+.button.large.winered > span { background-position: left -912px;}
+.button.large.winered > span > span { background-position: right -912px;}
+
+.button.large.green > span { background-position: left -988px;}
+.button.large.green > span > span { background-position: right -988px;}
+
+.button.large.purple > span { background-position: left -1064px;}
+.button.large.purple > span > span { background-position: right -1064px;}
+
+.button.large.lightgreen > span { background-position: left -1140px;}
+.button.large.lightgreen > span > span { background-position: right -1140px;}
+
+.button.large.darkpurple > span { background-position: left -1216px;}
+.button.large.darkpurple > span > span { background-position: right -1216px;}
+
+.button.large.darkred > span { background-position: left -1216px;}
+.button.large.darkred > span > span { background-position: right -1216px;}
+
+.button.large.darkred > span { background-position: left -1292px;}
+.button.large.darkred > span > span { background-position: right -1292px;}
+
+/**icons**/
+
+#icons span.icon { margin: 0 10px 10px 0; }
+.icon { width:30px; height:30px; display: inline-block; background-repeat: no-repeat; background-position:lef top; }
+.icon.add { background-image: url(/images/icons/icon_add.png);}
+.icon.arrow_down { background-image: url(/images/icons/icon_arrow_down.png);}
+

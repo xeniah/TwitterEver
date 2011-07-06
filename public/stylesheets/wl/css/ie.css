@@ -1,0 +1,92 @@
+/*----------------------------------------------------------------------*/
+/* This stylesheet is for IE 7 and IE8
+/* Selectors with *:first-child+html is for IE 7 only
+/*----------------------------------------------------------------------*/
+
+body{
+}
+
+nav{
+	border-right:1px solid;
+}
+
+header{
+	filter:none !important;
+	background-image:url(images/header_bg.png) !important;
+	background-repeat:repeat-x;
+}
+#header ul li ul li ul li{
+	width:160px;
+	margin:0;
+	padding:0;
+}
+#header ul li ul li ul li a{
+	width:120px;
+	margin:0;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Buttons
+/*----------------------------------------------------------------------*/
+
+a.btn{
+	padding:0 12px;
+	line-height:30px;
+	min-height:32px;
+	min-width:8px;
+	background-position:4px 4px;
+}
+button{
+	min-width:auto;
+	min-height:auto;
+}
+*:first-child+html button{
+	line-height:30px;
+}
+*:first-child+html button{
+	padding:0;
+}
+button.icon, a.btn.icon{
+	background-position:3px 2px;
+	padding-left:27px;
+}
+*:first-child+html button.icon{
+	padding-left:13px;
+}
+
+#content div.checker, #content div.radio{
+	clear:none;
+}
+#content div.radio input, #content div.checker input{
+	float:left;
+	zoom:1;
+	*display:inline;
+}
+*:first-child+html #content form .wl_formstatus, *:first-child+html #content form .timeformat,  *:first-child+html #content form .miniColors-trigger{
+	position:relative;
+	top:-8px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Widgets
+/*----------------------------------------------------------------------*/
+
+*:first-child+html .widget h3.handle.icon{
+	padding-left:30px;
+}
+*:first-child+html .widget h3.handle .icon{
+	margin-top:-30px;
+	margin-left:4px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Breadcrump
+/*----------------------------------------------------------------------*/
+.breadcrump li a{
+	padding:10px 20px 5px 15px;
+}
+.breadcrump li.last a{
+	padding-right:13px;
+}
+

@@ -1,0 +1,19 @@
+<% title "Logins" %>
+
+<table>
+  <tr>
+    <th>En Username</th>
+    <th>En Auth</th>
+  </tr>
+  <% for login in @logins %>
+    <tr>
+      <td><%= login.en_username %></td>
+      <td><%= login.en_auth %></td>
+      <td><%= link_to "Show", login %></td>
+      <td><%= link_to "Edit", edit_login_path(login) %></td>
+      <td><%= link_to "Destroy", login, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Login", new_login_path %></p>

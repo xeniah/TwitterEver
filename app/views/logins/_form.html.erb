@@ -1,0 +1,12 @@
+<%= form_for @login do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :en_username %><br />
+    <%= f.text_field :en_username %>
+  </p>
+  <p>
+    <%= f.label :en_auth %><br />
+    <%= f.text_field :en_auth %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

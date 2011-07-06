@@ -1,0 +1,719 @@
+* html body {
+	width:expression(document.documentElement.clientWidth < 999 ? "999px" : "auto");
+}
+* html .tags .video{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/video_24.png', sizingmethod='crop');
+}
+* html .tags .case{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/case_24.png', sizingmethod='crop');
+}
+* html .tags .calendar{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/calendar_24.png', sizingmethod='crop');
+}
+* html #nav{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav.png', sizingmethod='crop');
+}
+* html #nav a:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav-lt-hover.png', sizingmethod='crop');
+}
+* html #nav a:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav-rt-hover.png', sizingmethod='crop');
+}
+* html #nav .active .lt,
+* html #nav .active a:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav-lt.png', sizingmethod='crop');
+}
+* html #nav .active .rt,
+* html #nav .active a:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav-rt.png', sizingmethod='crop');
+}
+* html .block .btn{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn.png', sizingmethod='scale');
+}
+* html .tags .clock{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/ico-clock.png', sizingmethod='crop');
+}
+* html .tags .wifi{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/ico-wifi.png', sizingmethod='crop');
+}
+* html .tags .people{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/ico-people.png', sizingmethod='crop');
+}
+/*btn-yellow*/
+* html .buttons .btn-yellow .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-yellow .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-yellow .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-yellow:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-yellow:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-yellow:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-yellow .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-yellow .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-yellow .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-yellow-active-c.png', sizingmethod='scale');
+}
+/*btn-blue*/
+* html .buttons .btn-blue .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-blue:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-blue .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue-active-c.png', sizingmethod='scale');
+}
+/*btn-red*/
+* html .buttons .btn-red .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-red:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-red .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red-active-c.png', sizingmethod='scale');
+}
+/*btn-brown*/
+* html .buttons .btn-brown .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-brown .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-brown .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-brown:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-brown:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-brown:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-brown .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-brown .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-brown .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-brown-active-c.png', sizingmethod='scale');
+}
+/*btn-blue2*/
+* html .buttons .btn-blue2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-blue2:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue2:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue2:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-blue2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue2-active-c.png', sizingmethod='scale');
+}
+/*btn-blue3*/
+* html .buttons .btn-blue3 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue3 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue3 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-blue3:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue3:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue3:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-blue3 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue3 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue3 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue3-active-c.png', sizingmethod='scale');
+}
+/*btn-blue4*/
+* html .buttons .btn-blue4 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue4 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue4 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-blue4:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue4:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-blue4:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-blue4 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue4 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-blue4 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-blue4-active-c.png', sizingmethod='scale');
+}
+/*btn-red2*/
+* html .buttons .btn-red2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-red2:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red2:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red2:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-red2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red2-active-c.png', sizingmethod='scale');
+}
+/*btn-red3*/
+* html .buttons .btn-red3 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red3 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red3 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-red3:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red3:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red3:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-red3 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red3 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red3 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red3-active-c.png', sizingmethod='scale');
+}
+/*btn-red4*/
+* html .buttons .btn-red4 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red4 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red4 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-red4:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red4:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red4:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-red4 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red4 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red4 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red4-active-c.png', sizingmethod='scale');
+}
+/*btn-red5*/
+* html .buttons .btn-red5 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red5 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red5 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-red5:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red5:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-red5:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-red5 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red5 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-red5 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-red5-active-c.png', sizingmethod='scale');
+}
+/*btn-grey*/
+* html .buttons .btn-grey .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-grey .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-grey .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-grey:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-grey:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-grey:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-grey .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-grey .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-grey .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-grey-active-c.png', sizingmethod='scale');
+}
+/*btn-black*/
+* html .buttons .btn-black .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-black .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-black .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-black:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-black:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-black:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-black .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-black .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-black .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-black-active-c.png', sizingmethod='scale');
+}
+/*btn-orange*/
+* html .buttons .btn-orange .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-orange .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-orange .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-orange:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-orange:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-orange:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-orange .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-orange .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-orange .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-orange-active-c.png', sizingmethod='scale');
+}
+/*btn-purple*/
+* html .buttons .btn-purple .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-purple:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-purple .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-purple .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-purple .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple-active-c.png', sizingmethod='scale');
+}
+/*btn-purple2*/
+* html .buttons .btn-purple2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-purple2:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple2:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-purple2:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-purple2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-purple2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-purple2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-purple2-active-c.png', sizingmethod='scale');
+}
+/*btn-green*/
+* html .buttons .btn-green .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-green:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-green .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-green .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-green .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green-active-c.png', sizingmethod='scale');
+}
+/*btn-green2*/
+* html .buttons .btn-green2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-c.png', sizingmethod='scale');
+}
+* html .buttons .btn-green2:hover .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-hover-lt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green2:hover .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-hover-rt.png', sizingmethod='crop');
+}
+* html .buttons .btn-green2:hover .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-hover-c.png', sizingmethod='scale');
+}
+* html .buttons .active .btn-green2 .lt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-active-lt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-green2 .rt{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-active-rt.png', sizingmethod='crop');
+}
+* html .buttons .active .btn-green2 .c{
+	background:none; 
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-green2-active-c.png', sizingmethod='scale');
+}

@@ -1,0 +1,16 @@
+<% title "Login" %>
+
+<p>
+  <strong>En Username:</strong>
+  <%= @login.en_username %>
+</p>
+<p>
+  <strong>En Auth:</strong>
+  <%= @login.en_auth %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_login_path(@login) %> |
+  <%= link_to "Destroy", @login, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", logins_path %>
+</p>
