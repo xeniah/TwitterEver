@@ -8,6 +8,8 @@ TwitterEver::Application.routes.draw do
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
+  match 'show_user_dashboard.html' => 'admins#show_user_dashboard'
+  match 'test_page.html' => 'logins#test_page'
   match 'benefits.html' => 'admins#benefits'
   match 'features.html' => 'admins#features'
   match 'welcome_page.html' => 'admins#welcome_page'

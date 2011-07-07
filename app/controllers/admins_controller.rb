@@ -1,4 +1,5 @@
 class AdminsController < ApplicationController
+  layout "above_fold" #use symbol to specify a METHOD :choose_layout
   require 'evernote_config.rb'
   
   def index
@@ -13,10 +14,13 @@ class AdminsController < ApplicationController
       if session[:access_token].nil?
         redirect;
       else
-        retrieve_user_info;
-        render :welcome_page;
-      end
-    
+        begin
+          retrieve_user_info;
+          render :welcome_page;
+        rescue
+          redirect;
+        end
+      end 
     #render :text => 'login here'
   end
   
@@ -67,7 +71,25 @@ class AdminsController < ApplicationController
     session[:notebooks] = nil  
   end
   
+  def show_user_dashboard
+    if session[:user].nil?
+      redirect
+    else
+      retrieve_notebooks;
+      @notebooks = session[:notebooks];
+      render :layout => "white_label", :file => "admins/user_dashboard";
+    end  
+  end
+  
+  def save_en_user
+    en_user = Login.new
+    en_user.username = session[:user].username;
+    en_user.en_auth = session[:access_token].token;
+    en_user.save!;
+  end
+  
   def redirect
+    #TODO: parse callback_url better
       callback_url = request.url.chomp("login_to_evernote").chomp("requesttoken").concat("redirect_callback")
       puts "I am in redirect, callback url: #{callback_url}"
       begin
@@ -84,6 +106,7 @@ class AdminsController < ApplicationController
       end
   end
   
+  
   def redirect_callback
     puts "I am in callback"
     if (params['oauth_verifier'].nil?)
@@ -99,11 +122,11 @@ class AdminsController < ApplicationController
     if (session[:request_token].nil? == false)
        begin
          session[:access_token] = session[:request_token].get_access_token(:oauth_verifier => session[:oauth_verifier])
-
          # The response from the server will include the user's shardId,
          # which we will need later need to use the API
          session[:shard_id] = session[:access_token].params['edam_shard'];
          session[:user] = retrieve_user_info; 
+         save_en_user;
          puts "USERNAME: #{session[:user].username}"
          @current_status = "Exchanged the authorized temporary credentials for token credentials"
          puts @current_status
@@ -113,8 +136,9 @@ class AdminsController < ApplicationController
        end
     end
    # session[:user] = retrieve_user_info;
-    retrieve_notebooks;
-    render :welcome_page;
+    #retrieve_notebooks;
+    #render :welcome_page;
+    show_user_dashboard;
   end
   
   
@@ -130,7 +154,7 @@ class AdminsController < ApplicationController
       notebooks = noteStore.listNotebooks(session[:access_token].token)
       result = Array.new
       notebooks.each do |notebook| 
-        result << notebook.name
+        result << notebook
         puts "Notebook name: #{notebook.name}"
       end
       session[:notebooks] = result
@@ -139,6 +163,7 @@ class AdminsController < ApplicationController
       @last_error = "Error listing notebooks: #{e.message}"      
     end
     puts @current_status
+    result;
   end
    
   

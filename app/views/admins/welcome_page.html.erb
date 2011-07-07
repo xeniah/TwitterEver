@@ -1,40 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>AboveTheFold</title>
-	<!-- <link rel="stylesheet" type="text/css" media="all" href="css/960.css" /> -->
-	<%= stylesheet_link_tag "af/css/960" %>
-	<!-- <link media="all" rel="stylesheet" type="text/css" href="af/css/all.css" /> -->
-	<%= stylesheet_link_tag "af/css/all" %>
-	
-
-    <%= javascript_include_tag "af/js/jquery-1.4.3.min.js" %>
-	<%= javascript_include_tag "af/js/cufon.js" %>
-	<%= javascript_include_tag "af/js/cufon-fonts.js" %>
-	<%= javascript_include_tag "af/js/cufon-settings.js" %>
-	<%= javascript_include_tag "af/fancybox/jquery.fancybox-1.3.4.pack.js" %>
-
-    <!-- <link rel="stylesheet" href="af/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
-    <%= stylesheet_link_tag "af/fancybox/jquery.fancybox-1.3.4" %>
-	<!--[if lt IE 8]>
-		<!-- <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/> -->
-		<%= stylesheet_link_tag "af/css/ie" %>
-	<![endif]-->
-	<!--[if lt IE 7 ]>
-		<script src="af/js/dd_belatedpng.js"></script>
-		<script> DD_belatedPNG.fix('img, .png_bg'); </script>
-	<![endif]-->
-	<%= javascript_include_tag "af/js/jquery.main.js" %>
-</head>
-<body>
 	<div class="w1 clearfix png_bg">
 		<div class="container_12">
 			<div id="header" class="grid_12">
 				<h1 class="logo"><a href="index.html"><strong>TwitterEver</strong></a></h1>
 				<% if !session[:user].nil? %>
 						<div class="side">
-							<strong class="call">Hello,<span class="phone"><%= "#{session[:user].username}"%></span></strong><%= button_to "Logout", :action => :logout %>
+							<strong class="call">Hello,<span class="phone"><%= "#{session[:user].username}"%></span></strong><%= button_to "Logout", :action => :logout %><%= button_to "Proceed to your dashboard", :action => :show_user_dashboard %>
 						</div>
 				<% else %>
 					<div class="side">
@@ -142,5 +112,3 @@
 		</div>
 	</div>
 <span id="bottom"></span>
-</body>
-</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TwitterEver</title>
+  	<meta charset="utf-8">
+	
+	<title>White Label - a full featured Admin Skin</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="revaxarts.com">
+	
+	
+	<!-- Apple iOS and Android stuff -->
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	
+	<!-- Apple iOS and Android stuff - don't remove! -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	
+	<!-- Google Font and style definitions -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:regular,bold">
+	<%= stylesheet_link_tag "wl/css/style.css" %>
+	<!-- <link rel="stylesheet" href="wl/css/style.css"> -->
+	
+	
+	<!-- include the skins (change to dark if you like) -->
+	<!-- <link rel="stylesheet" href="css/light/theme.css" class="theme"> -->
+	<%= stylesheet_link_tag "wl/css/light/theme.css" %>
+	<!-- <link rel="stylesheet" href="css/dark/theme.css" class="theme"> -->
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	<!-- <link rel="stylesheet" href="css/ie.css"> -->
+	<%= stylesheet_link_tag "wl/css/ie.css" %>
+	<![endif]-->
+	
+	<!-- Use Google CDN for jQuery and jQuery UI -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+	
+	<!-- Loading JS Files this way is not recommended! Merge them but keep their order -->
+	
+	<!-- some basic functions -->
+
+	 <%= javascript_include_tag "wl/js/functions.js" %>
+		
+	<!-- all Third Party Plugins -->
+
+	<%= javascript_include_tag "wl/js/plugins.js" %>
+
+	<%= javascript_include_tag "wl/js/editor.js" %>
+
+	<%= javascript_include_tag "wl/js/functions.js" %>
+
+	<%= javascript_include_tag "wl/js/flot.js" %>
+
+	<%= javascript_include_tag "wl/js/elfinder.js" %>
+
+	<%= javascript_include_tag "wl/js/datatables.js" %>
+	
+	<!-- all Whitelabel Plugins -->
+	<%= javascript_include_tag "wl/js/wl_Alert.js" %>
+  <%= javascript_include_tag "wl/js/wl_Autocomplete.js" %>
+  <%= javascript_include_tag "wl/js/wl_Breadcrumb.js" %>
+  <%= javascript_include_tag "wl/js/wl_Calendar.js" %>
+  <%= javascript_include_tag "wl/js/wl_Chart.js" %>
+  <%= javascript_include_tag "wl/js/wl_Color.js" %>
+  <%= javascript_include_tag "wl/js/wl_Date.js" %>
+  <%= javascript_include_tag "wl/js/wl_Editor.js" %>
+  <%= javascript_include_tag "wl/js/wl_Dialog.js" %>
+  <%= javascript_include_tag "wl/js/wl_Fileexplorer.js" %>
+  <%= javascript_include_tag "wl/js/wl_Form.js" %>
+  <%= javascript_include_tag "wl/js/wl_Gallery.js" %>
+  <%= javascript_include_tag "wl/js/wl_Number.js" %>
+  <%= javascript_include_tag "wl/js/wl_Password.js" %>
+  <%= javascript_include_tag "wl/js/wl_Slider.js" %>
+  <%= javascript_include_tag "wl/js/wl_Store.js" %>
+  <%= javascript_include_tag "wl/js/wl_Time.js" %>
+  <%= javascript_include_tag "wl/js/wl_Valid.js" %>
+  <%= javascript_include_tag "wl/js/wl_Widget.js" %>
+	
+	<!-- configuration to overwrite settings -->
+  <%= javascript_include_tag "wl/js/config.js" %>
+		
+	<!-- the script which handles all the access to plugins etc... -->
+  <%= javascript_include_tag "WL/js/script.js" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

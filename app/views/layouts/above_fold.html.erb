@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TwitterEver</title>
+  <%#= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<%= stylesheet_link_tag "af/css/960" %>
+	<%= stylesheet_link_tag "af/css/all" %>
+
+
+    <%= javascript_include_tag "af/js/jquery-1.4.3.min.js" %>
+	<%= javascript_include_tag "af/js/cufon.js" %>
+	<%= javascript_include_tag "af/js/cufon-fonts.js" %>
+	<%= javascript_include_tag "af/js/cufon-settings.js" %>
+	<%= javascript_include_tag "af/fancybox/jquery.fancybox-1.3.4.pack.js" %>
+
+    <%= stylesheet_link_tag "af/fancybox/jquery.fancybox-1.3.4" %>
+	<!--[if lt IE 8]>
+		<%= stylesheet_link_tag "af/css/ie" %>
+	<![endif]-->
+	<!--[if lt IE 7 ]>
+		<script src="af/js/dd_belatedpng.js"></script>
+		<script> DD_belatedPNG.fix('img, .png_bg'); </script>
+	<![endif]-->
+	<%= javascript_include_tag "af/js/jquery.main.js" %>
+    <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

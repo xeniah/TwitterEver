@@ -1,4 +1,5 @@
 class LoginsController < ApplicationController
+  layout nil
   def index
     @logins = Login.all
   end
